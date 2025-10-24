@@ -9,59 +9,67 @@
 <body class="bg-light">
 
 <div class="container mt-5">
+
   <h1 class="text-center mb-4">Esercizio BTS_2.1 - Tipografia</h1>
 
-  <!-- Layout Grid -->
-  <div class="row">
-    <!-- Colonna sinistra: teoria -->
-    <div class="col-md-6">
-      <h3>Informazioni di base</h3>
-      <dl>
-        <dt>Dimensione testo default:</dt>
-        <dd>1rem (16px)</dd>
-        <dt>Font di default:</dt>
-        <dd>system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif</dd>
-        <dt>Margini di paragrafo:</dt>
-        <dd>margin-top: 0; margin-bottom: 1rem;</dd>
-      </dl>
-    </div>
+  <!-- Domande teoriche -->
+  <ol>
+    <li>Qual è la dimensione del testo di default di Bootstrap?</li>
+    <p>👉 <strong>1rem</strong> (equivale a <strong>16px</strong>).</p>
 
-    <!-- Colonna destra: esempi pratici -->
-    <div class="col-md-6">
-      <h3>Esempi pratici</h3>
+    <li>Qual è il font di default di Bootstrap?</li>
+    <p>👉 <em>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif</em></p>
 
-      <div class="p-3 border bg-white rounded">
-        <blockquote class="blockquote">
-          <p>"Il successo è la somma di piccoli sforzi ripetuti giorno dopo giorno."</p>
-          <footer class="blockquote-footer">Anonimo</footer>
-        </blockquote>
+    <li>Quali sono il margine superiore e inferiore di un paragrafo?</li>
+    <p>👉 <code>margin-top: 0;</code> e <code>margin-bottom: 1rem;</code></p>
 
-        <p>Bootstrap usa il tag <abbr title="Abbreviation">abbr</abbr> per abbreviazioni.</p>
-        <p>Puoi anche <mark>evidenziare</mark> parti di testo importanti.</p>
-      </div>
-    </div>
+    <li>Crea un div come segue usando opportunamente i tag dl, blockquote, abbr, mark</li>
+  </ol>
+
+  <!-- Sezione "Cose interessanti" -->
+  <div class="p-4 border rounded bg-white mb-5">
+    <h2>Cose interessanti</h2>
+    <p>Ieri ho bevuto <mark>molto</mark> the.</p>
+    <p>Questo mi rende <abbr title="NerVoSissimo">NVO</abbr></p>
+
+    <p class="fs-4 fw-bold">Wawaahwhwahwawhahnahahwhahawwww!</p>
+
+    <blockquote class="blockquote">
+      <footer class="blockquote-footer">Chewbacca dietro le quinte di Star Wars!</footer>
+    </blockquote>
+
+    <p class="mt-3">Ecco una lista di cose che mi rende nervoso:</p>
+
+    <dl>
+      <dt><strong>Coffee</strong></dt>
+      <dd>- black hot drink</dd>
+
+      <dt><strong>Milk</strong></dt>
+      <dd>- white cold drink</dd>
+
+      <dt><strong>Chewbacca</strong></dt>
+      <dd>- the co-pilot of the Millennium Falcon</dd>
+    </dl>
   </div>
 
-  <hr class="my-5">
-
-  <!-- Testi con varie formattazioni -->
-  <div class="row">
-    <div class="col">
-      <h3>Esercizi di formattazione</h3>
-      <p class="fw-bold">Questo testo è in grassetto (fw-bold).</p>
-      <p class="fst-italic">Questo testo è in corsivo (fst-italic).</p>
-      <p class="fw-light">Questo testo è light (fw-light).</p>
-      <p class="text-center">Questo testo è centrato (text-center).</p>
-      <p class="text-end">Questo testo è allineato a destra (text-end).</p>
-
+  <!-- Punto 5: Formattazioni varie -->
+  <h5>5. Prova a scrivere alcuni paragrafi con dei testi che abbiano queste caratteristiche:</h5>
+  <ol type="a">
+    <li><p class="fw-bold">Questo testo è in grassetto (fw-bold).</p></li>
+    <li><p class="fst-italic">Questo testo è in corsivo (fst-italic).</p></li>
+    <li><p class="fw-light">Questo testo è light (fw-light).</p></li>
+    <li><p class="text-center">Questo testo è centrato (text-center).</p></li>
+    <li><p class="text-end">Questo testo è allineato a destra (text-end).</p></li>
+    <li>
+      <p>Lista inline di cose che mi fanno innervosire:</p>
       <ul class="list-inline">
         <li class="list-inline-item">Traffico</li>
-        <li class="list-inline-item">Pubblicità invadente</li>
         <li class="list-inline-item">Wi-Fi lento</li>
+        <li class="list-inline-item">Pubblicità invadente</li>
       </ul>
-    </div>
-  </div>
+    </li>
+  </ol>
 </div>
-
 </body>
 </html>
+
