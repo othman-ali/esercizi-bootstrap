@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Esercizio BTS 3.2</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light p-4">
+
+  <div class="container">
+
+    <!-- 🧱 1️⃣ Finto Jumbotron -->
+    <div class="bg-info text-white p-5 rounded-3 mb-5">
+      <h1 class="display-5 fw-bold">Benvenuto nella Galleria!</h1>
+      <p class="lead">Questa sezione mostra immagini con diversi stili Bootstrap 5 e un piccolo esempio di alert e pulsanti.</p>
+    </div>
+
+    <!-- 🖼️ 2️⃣ Immagini -->
+    <div class="row text-center mb-5">
+      <div class="col-md-4">
+        <img src="https://via.placeholder.com/150" class="float-end rounded-circle" alt="Immagine destra">
+        <p>Fluttuante a destra in un cerchio</p>
+      </div>
+      <div class="col-md-4">
+        <img src="https://via.placeholder.com/150" class="img-thumbnail mx-auto d-block" alt="Immagine centrata">
+        <p>Centrata in un thumbnail</p>
+      </div>
+      <div class="col-md-4">
+        <img src="https://via.placeholder.com/150" class="float-start rounded" alt="Immagine sinistra">
+        <p>Fluttuante a sinistra con bordi arrotondati</p>
+      </div>
+    </div>
+
+    <!-- ⚠️ 3️⃣ Alert -->
+    <div id="alert-top" class="alert alert-success alert-dismissible fade show" role="alert">
+      <strong>Successo!</strong> Hai caricato correttamente la pagina. 
+      <a href="#top" class="alert-link">Torna all’inizio</a>.
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi"></button>
+    </div>
+
+    <!-- 🔘 4️⃣ Bottoni -->
+    <div class="row text-center my-5">
+      <div class="col-md-6 mb-3">
+        <button class="btn btn-outline-primary">Button Outline</button>
+      </div>
+      <div class="col-md-6 mb-3 d-grid">
+        <button class="btn btn-success btn-block">Block level button</button>
+      </div>
+    </div>
+
+    <!-- ⬇️ 5️⃣ Dropdown in gruppo di bottoni -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">Azione</button>
+      <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+        <span class="visually-hidden">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Opzione 1</a></li>
+        <li><a class="dropdown-item" href="#">Opzione 2</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Altro</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
