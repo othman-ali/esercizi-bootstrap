@@ -2,69 +2,91 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Esercizio BTS 3.2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esercizio BTS_3.2</title>
+  <!-- Bootstrap 5 CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .img-circle {
+      border-radius: 50%;
+      float: right;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+    .img-left {
+      float: left;
+      border-radius: 15px;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin-right: 15px;
+    }
+  </style>
 </head>
-<body class="bg-light p-4">
 
-  <div class="container">
+<body id="top" class="bg-light">
 
-    <!-- 🧱 1️⃣ Finto Jumbotron -->
-    <div class="bg-info text-white p-5 rounded-3 mb-5">
-      <h1 class="display-5 fw-bold">Benvenuto nella Galleria!</h1>
-      <p class="lead">Questa sezione mostra immagini con diversi stili Bootstrap 5 e un piccolo esempio di alert e pulsanti.</p>
+  <div class="container py-4">
+
+    <!-- JUMBOTRON ALTERNATIVO -->
+    <div class="bg-info text-white text-center p-5 rounded mb-4">
+      <h1 class="display-4">Galleria di Immagini</h1>
+      <p class="lead">Tre immagini con stili diversi create con Bootstrap 5</p>
     </div>
 
-    <!-- 🖼️ 2️⃣ Immagini -->
-    <div class="row text-center mb-5">
+    <!-- SEZIONE IMMAGINI -->
+    <div class="row text-center g-4 mb-4">
+      
+      <!-- Immagine 1: fluttuante a destra in un cerchio -->
       <div class="col-md-4">
-        <img src="https://via.placeholder.com/150" class="float-end rounded-circle" alt="Immagine destra">
-        <p>Fluttuante a destra in un cerchio</p>
+        <img src="https://picsum.photos/200" alt="img1" class="img-circle mb-3">
+        <p>Immagine fluttuante a destra, ritagliata in un cerchio.</p>
       </div>
+
+      <!-- Immagine 2: centrata in un thumbnail -->
       <div class="col-md-4">
-        <img src="https://via.placeholder.com/150" class="img-thumbnail mx-auto d-block" alt="Immagine centrata">
-        <p>Centrata in un thumbnail</p>
+        <div class="border p-3 rounded shadow-sm">
+          <img src="https://picsum.photos/201" alt="img2" class="img-fluid rounded mb-2">
+          <p>Immagine centrata all’interno di un riquadro thumbnail.</p>
+        </div>
       </div>
+
+      <!-- Immagine 3: fluttuante a sinistra con bordi arrotondati -->
       <div class="col-md-4">
-        <img src="https://via.placeholder.com/150" class="float-start rounded" alt="Immagine sinistra">
-        <p>Fluttuante a sinistra con bordi arrotondati</p>
+        <img src="https://picsum.photos/202" alt="img3" class="img-left mb-3">
+        <p>Immagine fluttuante a sinistra con bordi leggermente arrotondati.</p>
       </div>
     </div>
 
-    <!-- ⚠️ 3️⃣ Alert -->
-    <div id="alert-top" class="alert alert-success alert-dismissible fade show" role="alert">
-      <strong>Successo!</strong> Hai caricato correttamente la pagina. 
-      <a href="#top" class="alert-link">Torna all’inizio</a>.
+    <!-- ALERT CON LINK E CHIUSURA FADE -->
+    <div class="alert alert-success alert-dismissible fade show mt-4" role="alert">
+      <strong>Ben fatto!</strong> Hai visualizzato tutte le immagini. 
+      <a href="#top" class="alert-link">Torna all'inizio della pagina</a>.
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi"></button>
     </div>
 
-    <!-- 🔘 4️⃣ Bottoni -->
-    <div class="row text-center my-5">
-      <div class="col-md-6 mb-3">
-        <button class="btn btn-outline-primary">Button Outline</button>
-      </div>
-      <div class="col-md-6 mb-3 d-grid">
-        <button class="btn btn-success btn-block">Block level button</button>
+    <!-- GRUPPO DI BOTTONI -->
+    <div class="btn-group w-100 mt-4">
+      <button type="button" class="btn btn-outline-primary w-100">Bottone 1</button>
+      <button type="button" class="btn btn-outline-secondary w-100">Bottone 2</button>
+
+      <div class="btn-group w-100">
+        <button type="button" class="btn btn-outline-success dropdown-toggle w-100" data-bs-toggle="dropdown" aria-expanded="false">
+          Menu a discesa
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Azione 1</a></li>
+          <li><a class="dropdown-item" href="#">Azione 2</a></li>
+          <li><a class="dropdown-item" href="#">Azione 3</a></li>
+        </ul>
       </div>
     </div>
 
-    <!-- ⬇️ 5️⃣ Dropdown in gruppo di bottoni -->
-    <div class="btn-group">
-      <button type="button" class="btn btn-primary">Azione</button>
-      <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-        <span class="visually-hidden">Toggle Dropdown</span>
-      </button>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Opzione 1</a></li>
-        <li><a class="dropdown-item" href="#">Opzione 2</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Altro</a></li>
-      </ul>
-    </div>
+  </div> <!-- fine container -->
 
-  </div>
-
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
 </body>
 </html>
