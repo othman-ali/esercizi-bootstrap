@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ristorante di Lusso</title>
+
+    <!-- Bootstrap PERSONALIZZATO -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <style>
+        body {
+            background-color: var(--bs-light);
+        }
+
+        section {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.05);
+        }
+
+        footer {
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Ristorante</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+
+                    <!-- DROPDOWN -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Info</a>
+                        <ul class="dropdown-menu shadow">
+                            <li><a class="dropdown-item" href="#">Contatti</a></li>
+                            <li><a class="dropdown-item" href="#">Prenotazioni</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container py-4">
+
+        <!-- INTRO -->
+        <section>
+            <h1 class="fw-bold text-primary">Benvenuti al Ristorante</h1>
+            <p class="text-muted">
+                Design semplice che rispetta tutte le richieste dell’esercitazione.
+            </p>
+
+            <div class="d-flex gap-2 flex-wrap">
+                <button class="btn btn-primary">Prenota ora</button>
+                <button class="btn btn-secondary">Scopri di più</button>
+            </div>
+        </section>
+
+        <!-- SEZIONE BOTTONI -->
+        <section>
+            <h2 class="fw-bold text-primary mb-3">Palette in uso (Bottoni)</h2>
+            <div class="d-flex flex-wrap gap-2">
+                <button class="btn btn-primary">Primary</button>
+                <button class="btn btn-secondary">Secondary</button>
+                <button class="btn btn-success">Success</button>
+                <button class="btn btn-info">Info</button>
+                <button class="btn btn-warning">Warning</button>
+                <button class="btn btn-danger">Danger</button>
+            </div>
+        </section>
+
+        <!-- SEZIONE ALERT -->
+        <section>
+            <h2 class="fw-bold text-primary">Alert</h2>
+            <p class="text-muted">Mostrano i colori personalizzati Bootstrap.</p>
+
+            <div class="alert alert-primary">Alert Primary</div>
+            <div class="alert alert-success">Alert Success</div>
+            <div class="alert alert-warning">Alert Warning</div>
+            <div class="alert alert-danger">Alert Danger</div>
+        </section>
+
+        <!-- GRIGLIA SEMPLICE -->
+        <section>
+            <h2 class="fw-bold text-primary">Esempio Griglia</h2>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="p-3 bg-secondary text-dark rounded">Colonna 1</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 bg-secondary text-dark rounded">Colonna 2</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 bg-secondary text-dark rounded">Colonna 3</div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="text-center text-muted">
+        © 2025 — Progetto BTS_5.1
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
